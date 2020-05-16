@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #fcfcf9;
+}
+.main{
+  width: 100%;
+  height: auto;
+  background-color: #9FFFCB;
+}
+.header{
+  width: 80%;
+  margin: auto;
+  height: 60px;
+  background: #298f5c;
+}
+.list{
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.list a{
+  text-decoration: none;
+}
+.list a:hover{
+  text-decoration: underline;
+}
+.content{
+  width: 80%;
+  margin: auto;
+  background-color: #21A179;
+}
+.presentation{
+  width: inherit;
+  margin: auto;
+  height: 300px;
+}
+.presentation__top{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation__top h1{
+  font-size: 40px;
+}
+.architecture{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 1fr;
+}
+.architecture-text{
+  width: 100%;
+  height: 60px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #298f5c;
+}
+.architecture-item{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.architecture img{
+  width: 100%;
+  height: auto;
+  filter: grayscale();
+  transition: 750ms all;
+  /* object-fit: ; */
+}
+.architecture img:hover{
+  filter: none;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.coder{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+}
+.coder-text{
+  width: 100%;
+  height: 60px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #298f5c;
+}
+.coder-item{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.coder-item img{
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.coder-item img:hover{
+  cursor: pointer;
+}
+.about{
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+}
+.about-txt{
+  width: 100%;
+  height: 60px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #298f5c;
+}
+.footer{
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 45% 1fr 1fr;
+  grid-template-rows: 60px 200px 30px;
+  background-color: #21A179;
+}
+.footer-txt{
+  width: 100%;
+  height: 60px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #298f5c;
+}
+.footer__contacto{
+  width: 100%;
+  padding: 20px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: inline-block;
+  margin: auto;
+}
+.footer__contacto input[type=text]{
+  width: 60%;
+  padding: 5px;
+}
+.footer__contacto button{
+  padding: 5px 20px;
+  background: #1e63cd;
+  color: #ffff;
+  border: none;
+}
+.footer__contacto button:hover{
+  cursor: pointer;
+}
+.footer__rrhh{
+  width: 100%;
+  height: 60px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  margin-right: 20px;
+}
+.rrhh-link {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+.github{
+  background-image: url(/assets/icons/github.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.facebook{
+  background-image: url(/assets/icons/facebook.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.instagram{
+  background-image: url(/assets/icons/instagram.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__finPagina{
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+.footer__finPagina--txt{
+  width: 100%;
+  height: 30px;
+  background-color: #298f5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
